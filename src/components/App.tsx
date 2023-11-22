@@ -2,6 +2,11 @@ import React from 'react'
 import classes from './App.module.scss'
 import {Outlet} from "react-router-dom";
 
+function TODO(str: string): string {
+    if (str) return 'ok'
+    return 'not ok'
+}
+
 
 export const App = () => {
 
