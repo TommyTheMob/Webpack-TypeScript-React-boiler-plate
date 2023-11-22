@@ -6,3 +6,14 @@
 
   font-family: 'PT Sans', sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+
+  color: #0059ff;
+}

@@ -1,32 +1,25 @@
 import React from 'react'
 import classes from './App.module.scss'
-import {Outlet} from "react-router-dom";
-
-function TODO(str: string): string {
-    if (str) return 'ok'
-    return 'not ok'
-}
-
+import {Outlet} from "react-router-dom"
+import ReactSVG from '@/assets/react.svg'
+import WebpackSVG from '@/assets/webpack.svg'
+import TSSVG from '@/assets/typescript.svg'
 
 export const App = () => {
-
-    // if (__PLATFORM__ === 'desktop') {
-    //     return <div>ISDESKTOPPLATFORM</div>
-    // }
-    //
-    // if (__PLATFORM__ === 'mobile') {
-    //     return <div>ISMOBILEPLATFORM</div>
-    // }
-    //
-    // if (__ENV__ === 'development') {
-    //     // addDevTools()
-    // }
-
     return (
-        <div data-testid={'App.DatatestId'}>
-            <h1 data-testid={'Platform'}>PLATFORM={__PLATFORM__}</h1>
-            Hello World
-            <Outlet />
+        <div className={classes.page}>
+            <div className={classes.content}>
+                <h1>Your Webpack + TS + React build is ready to use!</h1>
+                <div style={{textAlign: 'center', marginTop: '25px'}}>
+                    <WebpackSVG style={{marginRight: 25}} width={150} height={150}/>
+                    <TSSVG style={{marginRight: 25}} width={150} height={150}/>
+                    <ReactSVG style={{marginRight: 25}} width={150} height={150}/>
+                </div>
+                <div style={{color: '#ccc', textAlign: "center", marginTop: '25px'}}>
+                    <a href="https://github.com/TommyTheMob/Webpack-TypeScript-React-boiler-plate" target='_blank'>Github Repo</a>
+                </div>
+            </div>
+            <Outlet/>
         </div>
     );
 };

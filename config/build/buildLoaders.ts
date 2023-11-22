@@ -62,8 +62,8 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
         assetLoader,
         fontsLoader,
         scssLoader,
-        // tsLoader,
-        babelLoader,
+        tsLoader,
+        // babelLoader,
         svgrLoader
     ]
 }
