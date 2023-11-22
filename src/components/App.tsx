@@ -1,9 +1,9 @@
 import React from 'react'
 import classes from './App.module.scss'
 import {Outlet} from "react-router-dom"
-import ReactSVG from '@/assets/react.svg'
-import WebpackSVG from '@/assets/webpack.svg'
-import TSSVG from '@/assets/typescript.svg'
+import ReactSVG from '@/assets/reactsvg.svg'
+import WebpackSVG from '@/assets/webpacksvg.svg'
+import TSSVG from '@/assets/typescriptsvg.svg'
 
 export const App = () => {
     return (
