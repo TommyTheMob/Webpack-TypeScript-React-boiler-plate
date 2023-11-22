@@ -23,8 +23,8 @@ export const App = () => {
     // }
 
     return (
-        <div>
-            <h1>PLATFORM={__PLATFORM__}</h1>
+        <div data-testid={'App.DatatestId'}>
+            <h1 data-testid={'Platform'}>PLATFORM={__PLATFORM__}</h1>
             Hello World
             <Outlet />
         </div>

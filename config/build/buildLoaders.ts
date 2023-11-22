@@ -56,7 +56,7 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
         }],
     }
 
-    const babelLoader = buildBabelLoader()
+    const babelLoader = buildBabelLoader(options)
 
     return [
         assetLoader,
